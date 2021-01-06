@@ -38,8 +38,15 @@ body {
 
 .styleMenu {
     float:left;
-    margin-right: 20px;
+    margin-right: 35px;
     color: white;
     font-family:'Courier New', Courier, monospace;
     font-size: 18px;
+}
+
+
+.styleIcon {
+
+    color: white;
+    margin-right:35px;
 }
