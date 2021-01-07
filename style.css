@@ -7,13 +7,15 @@ body {
 
 #awatar {
 
-    background-image: url('image/awatar.png');
+    background: -webkit-linear-gradient(bottom, rgb(230, 207, 127) 11%, rgb(224, 148, 121) 57%, rgb(222, 119, 119) 87%);
+    background: -o-linear-gradient(bottom, rgb(230, 207, 127) 11%, rgb(224, 148, 121) 57%, rgb(222, 119, 119) 87%);
+    background: -ms-linear-gradient(bottom, rgb(230, 207, 127) 11%, rgb(224, 148, 121) 57%, rgb(222, 119, 119) 87%);
+    background: -moz-linear-gradient(bottom, rgb(230, 207, 127) 11%, rgb(224, 148, 121) 57%, rgb(222, 119, 119) 87%);
+    background: linear-gradient(to top, rgb(230, 207, 127) 11%, rgb(224, 148, 121) 57%, rgb(222, 119, 119) 87%);
     background-size: cover;
-    height: 90%;
+    height: 100%;
     width: 100%;
-    /* display: flex; */
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 
     
