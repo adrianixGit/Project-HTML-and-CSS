@@ -1,194 +1,171 @@
 body {
-    margin:0;
+    margin:0 auto;
     padding:0;
-    
+    text-align:center;
 }
 
-
-#awatar {
-
+.awatar {
     background: -webkit-linear-gradient(bottom, rgb(230, 207, 127) 11%, rgb(224, 148, 121) 57%, rgb(222, 119, 119) 87%);
     background: -o-linear-gradient(bottom, rgb(230, 207, 127) 11%, rgb(224, 148, 121) 57%, rgb(222, 119, 119) 87%);
     background: -ms-linear-gradient(bottom, rgb(230, 207, 127) 11%, rgb(224, 148, 121) 57%, rgb(222, 119, 119) 87%);
     background: -moz-linear-gradient(bottom, rgb(230, 207, 127) 11%, rgb(224, 148, 121) 57%, rgb(222, 119, 119) 87%);
     background: linear-gradient(to top, rgb(230, 207, 127) 11%, rgb(224, 148, 121) 57%, rgb(222, 119, 119) 87%);
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    flex-direction:column;
-  
+    padding-right:20%;
+    padding-left:20%;    
 }
+/* 
+.bird-overlay {
+    background-color: black;
+    opacity: 0.5;
+    width:100%;
+    height:100%;
+    position: absolute;
+    margin:0;
+    padding:0;
+} */
 
-
-#logo {
+.awatar nav .logo {
     float:left;
-    padding-left:20%;
-    padding-top:20px;
     color:white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:25px;
+    z-index: 1;
 }
 
-#menu {
+.awatar nav .logo:hover {
+    color: yellow;
+}
+
+nav {
+    padding-top:10px;
+}
+
+.awatar nav .menu {
     float:right;
-    padding-right:20%;
-    padding-left:20%;
-    padding-top:20px;
+    list-style:none;
+    margin:0;
 }
 
-.styleMenu {
+.awatar nav .menu li {
     float:left;
     margin-right: 35px;
-    color: white;
+}
+
+.awatar nav .menu li a {
+    text-decoration: none;
+    color:white;
     font-family:'Courier New', Courier, monospace;
     font-size: 18px;
 }
 
-
-.styleIcon {
-
-    color: white;
-    margin-right:35px;
+.awatar nav .menu li a:hover {
+    color:yellow;
 }
 
-#CreativeTemplate {
-    width:100%;
-    float: left;
-    padding-top:3%;
+.awatar nav .menu li:hover {
+    border-bottom: 3px solid yellow;
+    padding-bottom:5px;
 }
 
-#CreativeTemplateTEXT {
+.awatar nav .menu li:last-child {
+    margin-right: 0;
+}
+
+.awatar header {
+    margin-top:160px;
+}
+
+.awatar header p:before {
+    content: 'Creative Template';
+    display:block;
     text-align:center;
     color: white;
     font-size: 50px;
     font-family:cursive;
 }
 
-#WelcomeToMogo {
-
-    width:100%;
-    float: left;
-}
-
-#WelcomeToMogoTEXT {
-    text-align:center;
+.awatar header h1 {
     color: white;
     font-size: 170px;
-    font-family:Arial;
-    font-weight:bold;
-    padding-right:20%;
-    padding-left:20%;
     margin:0;
-
+    font-family:Arial;
 }
 
-hr {
+.awatar header hr {
     width: 70px;
     height:3px;
     background-color:white;
     border:none;
     margin-bottom:50px;
-    
 }
 
-#buttonDiv {
-
-    
-    width:100%;
-    text-align:center;
-    display:flex;
-    justify-content: center;
-    
-}
-
-#LearnMoreButton {
-
+.awatar header .btn {
+    text-decoration: none;
     border:3px white solid;
     width:200px;
     height: 50px;
     background: none;
     color: white;
     font-weight:bold;
-    
+    cursor:pointer;
+    outline:none;
+    margin-bottom:50px;
+}
+
+.awatar header .btn:hover {
+    border:3px yellow solid;
+    color:yellow;
     
 }
 
-
-#AwatarFooter {
-    width: 100%;
+.awatar .slider {
     display:flex;
-    justify-content: center;
-    
-
+    justify-content: flex-start;
+    text-align:left;
+    padding-bottom:15px;
+    padding-top: 100px;
 }
 
-.AwatarFooterStyle{
+.awatar .slider .slider-style {
     color: white;
-    margin-right: 2%;
-    padding-top: 6%;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 700;
     font-family:'Courier New', Courier, monospace;
+    margin-right:10px;
 }
 
-#contacts {
+.awatar .slider .slider-style:last-child {
     margin-right:0;
 }
 
-.numberStyle {
-    font-weight:bold;
-    font-size:23px;
+.awatar .slider hr {
+    width:280px;
+    height: 3px;
+    background-color: #ffffff;
+    border:none;
 }
 
-.hrStyleFooter {
-    margin:0;
-    margin-bottom:10px;
-    width:260px;
+.about-us header {
+    margin-top: 50px;
 }
 
-#WhatWeDo {
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top:20px;
-}
-
-#WhatWeDoText {
+.about-us header p:before {
+    content: "What we do";
+    display:block;
     font-size: 24px;
     color: #333333;
     font-weight: 400;
     font-family:cursive;
 }
 
-#StoryAboutUsText {
+.about-us header h2 {
     font-size: 30px;
     color: #333333;
     font-weight: 700;
     font-family:Arial;
     margin:0;
-    
 }
 
-#hrStyleWeDo {
-    width: 60px;
-    background-color: #f38181;
-    margin-top:30px;
-    margin-bottom:30px;
-}
 
-#TextWhatWeDo {
-    width:63%;
-    font-size: 15px;
-    line-height: 24px;
-    color: #999999;
-    font-weight: 400;
-    font-family: "Roboto";
-    text-align: center;
-    margin-bottom: 100px;
-}
 
-.PicStyle {
-    width: 380px;
-    height: 250px;
-    margin-right:30px;
-}
+
