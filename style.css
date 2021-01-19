@@ -164,6 +164,15 @@ nav {
     border:none;
 }
 
+/* TUTAJ ZACZYNA SIE SEKCJA ABOUT US */
+
+.about-us {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about-us header {
     margin-top: 50px;
 }
@@ -183,9 +192,109 @@ nav {
     font-weight: 700;
     font-family:Arial;
     margin:0;
+    position:relative;
 }
 
-@media (max-width:1400px) and (min-width:1010px) {
+.about-us h2:after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    position: absolute;
+    margin: auto;  
+	top: 5rem;  
+	right: 0;  
+	bottom: 0;  
+	left: 0;
+}
+
+.about-us .about-text {
+    margin-top:50px;
+    width:50%;
+}
+
+.about-us .about-text p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-weight: 400;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    width:80%;
+    margin:0;
+    margin-top:50px;
+}
+
+.about-us .gallery .gallery-divs-style {
+    width: 380px;
+    height: 250px;
+    background-color: #95e1d3;
+    margin-right:1.5rem;
+}
+
+.about-us .gallery .gallery-divs-style:last-child {
+    margin-right:0;
+}
+
+.about-us .gallery .gallery-divs-style img {
+    width:100%;
+    height:100%;
+}
+
+.about-us .gallery .gallery-divs-style img:hover {
+    transform: translate(-0.5rem, -0.5rem);
+    transition-duration: 0.8s;
+}
+
+.about-us .facts{
+    width:100%;
+    height: 270px;
+    background-color: #95e1d3;
+    margin-top:70px;
+    display:flex;
+    justify-content: center;
+}
+
+.about-us .facts .numbers {
+    width:60%;
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+
+.about-us .facts .numbers .facts-numbers {
+    width:20%;
+    height:100%;
+    border-right:1px solid white;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+.about-us .facts .numbers .facts-numbers:first-child{
+    border-left:1px solid white;
+}
+
+.about-us .facts .numbers .facts-numbers h3 {
+    margin:0;
+    padding:0;
+    font-size: 5rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.about-us .facts .numbers .facts-numbers h4 {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    margin:0;
+}
+
+
+@media (max-width:1400px) and (min-width:1020px) {
     .awatar header h1 {
         font-size: 8rem;
     }
@@ -202,7 +311,7 @@ nav {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1020px) {
     .awatar header h1 {
         font-size: 3rem;
     }
@@ -277,7 +386,50 @@ nav {
         font-size:40px;
     }
 
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .about-us .gallery .gallery-divs-style {
+        margin:0;
+        margin-bottom:1rem;
+        width:100%;
+        
+    }
+
+    .about-us .facts{
+        margin-top:70px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        height:50rem;
+        padding:0;
+        
+    }
+
+    .about-us .facts .numbers {
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us .facts .numbers .facts-numbers {
+        width:100%;
+        height:100%;
+        border-right:none;
+        border-top:1px solid white;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        }
+    .about-us .facts .numbers .facts-numbers:first-child{
+        border-left:none;
+    }   
 }
 
 @media (max-width:1000px) and (min-width:700px) {
